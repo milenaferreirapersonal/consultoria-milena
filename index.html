@@ -18,7 +18,7 @@
 
         .card-sage { background-color: #8ca381; color: #ebd8ce; transition: all 0.4s ease; border: 1px solid rgba(255, 255, 255, 0.1); }
         
-        /* Estilos da Seção de Feedback (Oculta via comentário no HTML) */
+        /* Estilos da Seção de Feedback (Oculta via comentário) */
         .feedback-frame {
             width: 320px; height: 450px; flex-shrink: 0; margin-right: 24px;
             background: #8ca381; padding: 20px; border-radius: 8px;
@@ -35,13 +35,7 @@
         }
         .print-img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-        /* Botão Voltar ao Topo */
-        #backToTop {
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        #backToTop { transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; }
         #backToTop:hover { background-color: #4a5441; transform: scale(1.1); }
     </style>
 </head>
@@ -82,19 +76,19 @@
     <div class="bg-sage-dark py-12 border-y border-white/10">
         <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-10 text-[#ebd8ce] px-6">
             <div class="text-center">
-                <span class="block text-xl md:text-2xl font-black italic uppercase mb-2">+50</span>
+                <span class="block text-lg md:text-xl font-black italic uppercase mb-2">+50</span>
                 <span class="text-[8px] uppercase tracking-widest opacity-60 font-bold">Pessoas treinando com constância</span>
             </div>
             <div class="text-center">
-                <span class="block text-xl md:text-2xl font-black italic uppercase mb-2">100%</span>
+                <span class="block text-lg md:text-xl font-black italic uppercase mb-2">100%</span>
                 <span class="text-[8px] uppercase tracking-widest opacity-60 font-bold">Treinos personalizados</span>
             </div>
             <div class="text-center">
-                <span class="block text-xl md:text-2xl font-black italic uppercase mb-2">MÉTODO</span>
+                <span class="block text-lg md:text-xl font-black italic uppercase mb-2">MÉTODO</span>
                 <span class="text-[8px] uppercase tracking-widest opacity-60 font-bold">Baseado em ciência</span>
             </div>
             <div class="text-center">
-                <span class="block text-xl md:text-2xl font-black italic uppercase mb-2">SUPORTE</span>
+                <span class="block text-lg md:text-xl font-black italic uppercase mb-2">SUPORTE</span>
                 <span class="text-[8px] uppercase tracking-widest opacity-60 font-bold">Direto e estratégico</span>
             </div>
         </div>
@@ -120,7 +114,7 @@
 
     <section id="metodologia" class="py-20 px-4 md:px-6 border-b border-black/5">
         <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-2xl font-black italic uppercase mb-12 text-[#4a5441]">Método</h3>
+            <h3 class="text-2xl md:text-3xl font-black italic uppercase mb-12 text-[#4a5441]">Método</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="p-8 card-sage rounded-sm shadow-md text-center"><h4 class="font-bold uppercase mb-3 italic">Avaliação Inicial</h4><p class="text-sm opacity-90">Análise completa para entender sua rotina, histórico, limitações e objetivos reais.</p></div>
                 <div class="p-8 card-sage rounded-sm shadow-md text-center"><h4 class="font-bold uppercase mb-3 italic">Planejamento de Treino</h4><p class="text-sm opacity-90">Treinos objetivos, bem estruturados e adaptados ao seu tempo disponível: foco em eficiência e evolução progressiva.</p></div>
@@ -160,29 +154,29 @@
     <section id="planos" class="py-20 px-4 md:px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-black uppercase italic mb-12 text-center text-[#4a5441]">Planos de<span class="opacity-30 font-light not-italic"> Acompanhamento</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                
                 <div class="p-8 card-sage rounded-sm shadow-lg text-center">
-                    <h4 class="uppercase font-bold text-[8px] mb-6 tracking-widest opacity-60 text-white">Plano Mensal</h4>
-                    <div class="text-4xl font-black mb-8">R$ 119,99</div>
-                    <ul class="text-[10px] uppercase mb-8 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 30 dias</li></ul>
-                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-bold uppercase block transition border border-white hover:bg-transparent hover:text-white">Selecionar plano</a>
+                    <h4 class="uppercase font-bold text-[8px] mb-8 tracking-widest opacity-60 text-white">Plano Mensal</h4>
+                    <ul class="text-[10px] uppercase mb-10 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 30 dias</li></ul>
+                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-bold uppercase block transition border border-white hover:bg-transparent hover:text-white">Saiba mais</a>
                 </div>
+
                 <div class="p-8 card-sage rounded-sm shadow-lg text-center">
-                    <h4 class="uppercase font-bold text-[8px] mb-6 tracking-widest opacity-60 text-white">Plano Bimestral</h4>
-                    <div class="text-4xl font-black mb-8">R$ 219,99</div>
-                    <ul class="text-[10px] uppercase mb-8 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 60 dias</li></ul>
-                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-bold uppercase block transition border border-white hover:bg-transparent hover:text-white">Selecionar plano</a>
+                    <h4 class="uppercase font-bold text-[8px] mb-8 tracking-widest opacity-60 text-white">Plano Bimestral</h4>
+                    <ul class="text-[10px] uppercase mb-10 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 60 dias</li></ul>
+                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-bold uppercase block transition border border-white hover:bg-transparent hover:text-white">Saiba mais</a>
                 </div>
                 
                 <div class="p-8 card-sage border-2 border-white transform md:scale-105 shadow-2xl z-10 rounded-sm text-center relative flex flex-col items-center">
                     <h4 class="uppercase font-black text-[8px] mb-2 italic text-white">Plano Trimestral</h4>
-                    <div class="mb-4 inline-block bg-[#4a5441] text-[#ebd8ce] text-[7px] font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full shadow-sm">
+                    <div class="mb-6 inline-block bg-[#4a5441] text-[#ebd8ce] text-[7px] font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full shadow-sm">
                         Mais escolhido
                     </div>
-                    <div class="text-4xl md:text-5xl font-black mb-8">R$ 299,99</div>
-                    <ul class="text-[10px] uppercase mb-8 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 90 dias</li></ul>
-                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-bold uppercase block transition border border-white hover:bg-transparent hover:text-white">Selecionar plano</a>
+                    <ul class="text-[10px] uppercase mb-10 space-y-3 text-left border-t border-white/10 pt-6"><li>● Acompanhamento por 90 dias</li></ul>
+                    <a href="https://wa.me/5515988053910" class="w-full bg-white text-[#8ca381] py-4 text-[9px] font-black uppercase block transition border border-white hover:bg-transparent hover:text-white">Saiba mais</a>
                 </div>
+
             </div>
             <p class="mt-12 text-center text-[#4a5441]/60 text-xs md:text-sm italic font-medium">
                 Todos os planos incluem acompanhamento direto, ajustes contínuos e foco em constância.
